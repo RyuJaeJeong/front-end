@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- inline-block 태그를 인라인 속성으로 바꿔주면서 block속성일때 쓸수있는 마진, 
+        패딩 값  -->
+    <style>
+        
+        div {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            
+        }
+        .box1 {
+            border-style: solid;
+            border-width: thin;
+            border-color: red;
+        }
+        .box2 {
+            border-style: dotted;
+            border-width: medium;
+            border-color: blue;
+        }
+        .box3 {
+            border:thick green dashed;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="background-color: green;" class="box1"></div>
+    <div style="background-color: red;" class="box2"></div>
+    <div style="background-color: blue;" class="box3"></div>
+</body>
+</html>
