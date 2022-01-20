@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rose:hover {
+            transform: rotateZ(10deg);
+        }
+
+       .ltop .rose{
+           transform-origin: left top;
+       }
+
+       .rtop .rose{
+           transform-origin: right top;
+       }
+
+       .lbottom .rose{
+           transform-origin: left bottom;
+       }
+
+       .rbottom .rose{
+           transform-origin: right bottom;
+       }
+
+       #tr-style1 {transform-style:flat ; }
+      
+       #tr-style2 {transform-style:preserve-3d; }
+
+      
+       .box1{
+          perspective: 100px;
+           background-color: #82cdb8;
+           transform: rotateY(45deg);
+       }
+
+       .box2{
+          
+           background-color:#0d6097;
+           transform-origin: left top;
+           transform: rotateX(45deg);
+       }
+    </style>
+</head>
+<body>
+
+    <div class="origin">
+        <div class="ltop">
+            <img src="https://github.com/funnycom/html5-css3/blob/master/13/images/fruit.jpg?raw=true" class="rose">
+        </div>    
+    </div>
+
+    <div class="origin">
+        <div class="rtop">
+            <img src="https://github.com/funnycom/html5-css3/blob/master/13/images/fruit.jpg?raw=true" class="rose">
+        </div>    
+    </div>
+
+    <div class="origin">
+        <div class="lbottom">
+            <img src="https://github.com/funnycom/html5-css3/blob/master/13/images/fruit.jpg?raw=true" class="rose">
+        </div>    
+    </div>
+
+    <div class="origin">
+        <div class="rbottom">
+            <img src="https://github.com/funnycom/html5-css3/blob/master/13/images/fruit.jpg?raw=true" class="rose">
+        </div>    
+    </div>
+    <hr>
+    <!-- transform-style 속성  자식요소에도 3D효과 줄것인가 말것인가-->
+
+    <div class="container">
+        <div class="box1" id="tr-style1">
+            <div class="box2">1</div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="box1" id="tr-style2">
+            <div class="box2">2</div>
+        </div>
+    </div>
+    
+</body>
+</html>
