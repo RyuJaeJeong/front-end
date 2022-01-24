@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation-name: change-bg;
+            animation-duration: 3s;
+        }
+
+        #box1 {
+            width: 100px;
+            height: 100px;
+            background-color: #4cff00;
+            border: 1px solid black;
+            animation-name: shape;
+            animation-duration: 3s;
+        }
+
+        #box2 {
+            width: 100px;
+            height: 100px;
+            background-color: #8f06b0;
+            border: 1px solid black;
+            animation-name: rotate;
+            animation-duration: 3s;
+        }
+
+
+        .box{
+            margin-top: 50px;
+            margin-left: 100px;
+            padding: 20px;
+            height: 60px;
+            animation-name: moving;
+            animation-duration: 3s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes change-bg {
+            from {
+                background-color: blue;
+                border: 1px solid black;
+            }
+
+            to {
+                background-color: #a5d6ff;
+                border: 1px solid blue;
+                border-radius: 50%;
+            }
+        }
+
+        @keyframes shape {
+            from {
+                border:1px solid black;
+            }
+
+            to {
+                border:1px solid black;
+                border-radius: 50%;
+            }
+        }
+
+
+        @keyframes rotate {
+            from {
+               transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(45deg);
+            }
+        }
+
+        @keyframes moving {
+            from{
+                width: 200px;
+                background-color: #faef7c;
+                opacity: 0.5;
+                transform: scale(0.5) rotate(15deg);
+            }
+            
+            to{
+                width: 400px;
+                background-color: #ff9400;
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="div"></div>
+    <br>
+    <div id="box1"></div>
+    <br>
+    <div id="box2"></div>
+    <br>
+    <div class="box">
+        <h3>CSS3 Animation</h3>
+    </div>
+</body>
+</html>
