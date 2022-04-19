@@ -26,3 +26,17 @@
 .make-border {
     font-weight: bolder
 }
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background: cadetblue;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+    text-align: center;
+    padding: 40px;
+    box-shadow: 4px 4px black;
+    border-radius: 5px;
+}
