@@ -4,50 +4,13 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="css/layout3.css" rel="stylesheet">
-    <style>
-        .btn-main{
-            padding: 15px;
-            font-size: 20px;
-            background: white;
-            border: none;
-            border-radius: 5px;
-            /* position relative : 내 원래 위치를 기준으로 해 주세요 */
-            /* position속성의 특징
-             1. 좌표이동을 위한 기준점을 잡는 속성
-             2. 공중에 뜬다.
-                static 좌표이동 x
-                fixed 현재화면이 기준, 현재 뷰포트에 고정, 스크롤 해도 상단에 고정되어있는 메뉴를 만들때 쓴다.
-                absolute  position relative인 내 부모를 기준으로 움직이고 싶을 때
-             */
-            position: relative;
-            /*top: 100px;*/
-            /*left:300px;*/
-            bottom: 100px;
-            z-index: 10;
-        }
-
-        .box-subscribe {
-            width: 500px;
-            height: 200px;
-            background: gray;
-            position: relative;
-            margin-left: auto;
-            margin-right: auto;
-            bottom: -120px;
-            /* z-index는 position 속성때문에 요소가 붕떴을 때, 높낮이 조절하는 속성  */
-            z-index: 0;
-        }
-    </style>
 </head>
 <body>
-
     <div class="main-background" style="position: relative;">
-        <h4 class="title" align="center">Buy our shoes</h4>
-        <p style="color: white">
+        <h4 class="title" align="center">Buy our shoes Now on Sale</h4>
+        <p style="color: white" align="center">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         </p>
         <button onclick="alert('hi')" class="btn-main" style="position: absolute; left: 0; right: 0; margin: auto; width: 150px;">
             구매하기
@@ -63,6 +26,35 @@
         </div>
         <br>
     </div>
+    <div class="form">
+        <h1>contact us</h1>
+        <div style="width: 100%">
+            <label style="font-weight: bold">Your Email
+                <input type="text" placeholder="email@example.com">
+            </label>
+        </div>
+        <div style="display: flex; width: 100%">
+           <div style="width: 40%; justify-content: space-between;">
+               <label style="font-weight: bold">First Name
+                   <input type="text" style="width: 100%">
+               </label>
+           </div>
+           <div style="flex-grow: 20"></div>
+           <div style="width: 40%;">
+               <label style="font-weight: bold;">Last Name
+                   <input type="text" style="width: 100%">
+               </label>
+           </div>
+        </div>
+        <div style="width: 100%">
+            <label style="font-weight: bold">Your Email
+                <textarea rows="10"></textarea>
+            </label>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
 
 </body>
 </html>
