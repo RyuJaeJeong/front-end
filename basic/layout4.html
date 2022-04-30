@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        dt {
+            font-weight: bolder;
+        }
+
+        dd {
+            margin-left: 0;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        div > dl {
+            margin-right: 100px;
+        }
+
+        .first{
+            display: flex;
+        }
+
+        .second {
+            display: flex;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .wrapper {
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .wrapper {
+                display: block;
+            }
+
+            .first{
+                display: block;
+            }
+
+            .second {
+                display: block;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="first">
+        <div class="first-left">
+            <dl>
+                <dt>Fast Shipping</dt>
+                <dd>lorem ipsum</dd>
+            </dl>
+        </div>
+        <div class="first-right">
+            <dl>
+                <dt>Good Service</dt>
+                <dd>lorem ipsum</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="second">
+        <div class="second-left">
+            <dl>
+                <dt>Free Coupons</dt>
+                <dd>lorem ipsum</dd>
+            </dl>
+        </div>
+        <div class="second-right">
+            <dl>
+                <dt>New Products</dt>
+                <dd>lorem ipsum</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
