@@ -9,120 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
           integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-
-        div{
-            box-sizing: border-box;
-        }
-
-        .container{
-            height: 100VH;
-        }
-
-        .header{
-            display: flex;
-            width: 70%;
-            height: 350px;
-            max-height: 40%;
-            margin: auto;
-            background: linear-gradient(to bottom, #4997DC, #4E64C2);
-            position: relative;
-            justify-content: space-between;
-        }
-
-         .header-info {
-            width: 40%;
-            height: 100%;
-            padding-top: 3%;
-            padding-left: 7%;
-            color: white;
-        }
-
-        .header-img{
-            width: 40%;
-            height: 100%;
-        }
-
-        .header-img>img{
-            width: 25%;
-            height: 80%;
-            position: absolute;
-            top: 20%;
-            left: 70%;
-        }
-
-        button {
-            color : white;
-            padding: 10px;
-            background-color: #444445;
-            border: 0px;
-            border-radius: 5px;
-        }
-
-        .main{
-            width: 70%;
-            height: 250px;
-            max-height: 25%;
-            margin: auto;
-        }
-
-        .main>div{
-            margin: auto;
-            width: 50%;
-            height: 100%;
-        }
-
-        .footer{
-            display: flex;
-            width: 70%;
-            height: 350px;
-            max-height: 40%;
-            margin: auto;
-            padding-top: 1px;
-            background: #4E64C2;
-        }
-        .footer-top-container,
-        .footer-bottom-container{
-            display: flex;
-        }
-
-        .footer-top-container,
-        .footer-bottom-container,
-        .footer-first,.footer-second,
-        .footer-third,.footer-fourth{
-            width: 50%;
-            height: 100%;
-            font-size: 150px;
-        }
-
-        .footer-first,.footer-second,
-        .footer-third,.footer-fourth{
-            width: 50%;
-            height: 100%;
-            text-align: center;
-        }
-
-        i{
-            width: 150px;
-            height: 150px;
-            background-color: white;
-            font-size: 50px;
-            color: #4E64C2;
-            padding-top: 50px;
-            text-align: center;
-            border-radius: 100px;
-            box-sizing: border-box;
-            vertical-align: middle;
-        }
-
-        .footer-first > p,.footer-second > p,
-        .footer-third > p,.footer-fourth > p{
-            font-size: 25px;
-            color: white;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
@@ -130,7 +17,7 @@
             <div class="header-info">
                 <h2>Landing Page for Apps</h2>
                 <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+                    "Lorem ipsum dolor , consectetur adipiscing elit, sed do eiusmod tempor."
                 </p>
                 <button>
                     Show More
@@ -144,7 +31,7 @@
             <div style="margin-top: 5%">
                 <h2 align="center">it is perfect theme for your next Project!</h2>
                 <p align="center">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    Lorem ipsum dolor , consectetur adipiscing elit
                 </p>
                 <button style="display: block; margin: auto">
                     Show Portfolio
@@ -152,28 +39,34 @@
             </div>
         </div>
         <div class="footer">
-            <div class="footer-top-container">
-                <div class="footer-first">
-                    <i class="fa-solid fa-cart-shopping" ></i>
-                    <p>First</p>
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
-                <div class="footer-second">
-                    <i class="fa-brands fa-servicestack" ></i>
-                    <p>Second</p>
-                    <p>Lorem ipsum dolor sit amet,</p>
-                </div>
+            <div>
+                <p align="center" style="color: white; margin-top: 5px; margin-bottom:0px; font-size: 24px; font-weight: bolder;">Service</p>
+                <p align="center" style="color: white; margin: 10px; font-size: 24px;">what we offer</p>
             </div>
-            <div class="footer-bottom-container">
-                <div class="footer-third">
-                    <i class="fa-solid fa-comments-dollar" ></i>
-                    <p>Third</p>
-                    <p>Lorem ipsum dolor sit amet,</p>
+            <div class="footer-wrapper">
+                <div class="footer-top-container">
+                    <div class="footer-first">
+                        <i class="fa-solid fa-cart-shopping" ></i>
+                        <p class="title">First</p>
+                        <p class="describe">Lorem ipsum dolor </p>
+                    </div>
+                    <div class="footer-second">
+                        <i class="fa-brands fa-servicestack" ></i>
+                        <p class="title">Second</p>
+                        <p class="describe">Lorem ipsum dolor </p>
+                    </div>
                 </div>
-                <div class="footer-fourth">
-                    <i class="fa-brands fa-product-hunt"></i>
-                    <p>Fourth</p>
-                    <p>Lorem ipsum dolor sit amet,</p>
+                <div class="footer-bottom-container">
+                    <div class="footer-third">
+                        <i class="fa-solid fa-comments-dollar" ></i>
+                        <p class="title">Third</p>
+                        <p class="describe">Lorem ipsum dolor </p>
+                    </div>
+                    <div class="footer-fourth">
+                        <i class="fa-brands fa-product-hunt"></i>
+                        <p class="title">Fourth</p>
+                        <p class="describe">Lorem ipsum dolor </p>
+                    </div>
                 </div>
             </div>
         </div>
