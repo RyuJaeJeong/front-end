@@ -86,7 +86,7 @@
 
         #profile-content>div:nth-child(2){
             background-color: white;
-            height: 100%;
+            height: 115%;
         }
 
         #profile-content>div:nth-child(3){
@@ -109,15 +109,70 @@
         }
 
         .job{
-            font-size: 1.2em;
+            font-size: 1em;
             padding-bottom: 2%;
         }
 
         .location{
-            font-size: 1.2em;
+            font-size: 1em;
             padding-bottom: 4%;
         }
 
+        #works > div:nth-child(1){
+            width: 100%;
+            padding: 2%;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        #works > div:nth-child(2){
+            width: 100%;
+            padding: 2%;
+            font-size: 1em;
+
+        }
+
+        #about > div:nth-child(1){
+            width: 100%;
+            padding: 2%;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        #about > div:nth-child(2){
+            width: 100%;
+            padding: 2% 2% 6% 2%;
+            font-size: 1em;
+            border-bottom: 1px dotted black;
+        }
+
+        #skills > div:nth-child(1){
+            width: 100%;
+            padding: 2%;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        #skills > div:nth-child(2){
+            width: 100%;
+            padding: 2% 2% 6% 2%;
+            font-size: 1em;
+        }
+
+        #find > div:nth-child(1){
+            width: 100%;
+            height: 50%;
+            font-size: 6em;
+        }
+
+        #find > div:nth-child(2){
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #find > div:nth-child(2)>button{
+           margin-top: 5%;
+        }
 
 
         @media screen and (max-width: 768px) {
@@ -159,14 +214,16 @@
 
             }
 
-
             #media-object>.flex-grow-1>button{
                 padding: 2% 5%;
             }
 
             #profile-tab{
                 width: 90%;
+            }
 
+            #profile-content{
+                width: 90%;
             }
 
             #profile-content>div:nth-child(1){
@@ -182,11 +239,11 @@
             }
 
             #profile-content>div:nth-child(3){
-                height: 60%;
+                height: 100%;
             }
 
             .name{
-                font-size: 1.2em;
+                font-size: 1.3em;
                 padding-bottom: 2%;
             }
 
@@ -200,6 +257,22 @@
                 padding-bottom: 2%;
             }
 
+            #right{
+                height: 120%;
+            }
+
+
+
+            #find > div:nth-child(1){
+                width: 100%;
+                height: 50%;
+                font-size: 4em;
+            }
+
+            #find > div:nth-child(2){
+                width: 100%;
+                height: 50%;
+            }
 
         }
 
@@ -216,7 +289,7 @@
                 <div id="media-object" class="d-flex">
                     <div class="flex-shrink-0">
                         <div id="inner">
-                            <img id="profile-pic" class="rounded-circle"  src="./img/portfolio-1.jpg">
+                            <img id="profile-pic" class="rounded-circle"  src="./img/KakaoTalk_20220418_210655995.jpg">
                         </div>
                     </div>
                     <div class="flex-grow-1">
@@ -276,15 +349,50 @@
         </div>
 
         <div id="profile-content" class="row mx-auto">
-            <div class="col-md-2 rounded shadow-sm">
-
+            <div id="works" class="col-md-2 rounded shadow-sm">
+                <div>WORKS</div>
+                <div>
+                    - J.A.bending MES <br>
+                    - BKBIO MES <br>
+                    - MONTRAK MES
+                </div>
             </div>
             <div class="col-md-7 rounded shadow-sm">
-
+                <div id="about">
+                    <div>ABOUT</div>
+                    <div>
+                        저는 중소기업의 생산관리 시스템을 개발하는 일을 하고 있는 WEB 개발자 입니다.
+                        &nbsp; 고객사의 공정을 분석하고, 이를 프로그램으로서 개발하는 일을 하고 있습니다.
+                        저와 연락하고 싶으시다면 메일 주세요.
+                        <b>ryoojj8998@gmail.com</b>
+                    </div>
+                </div>
+                <div id="skills">
+                    <div>Skills</div>
+                    <div>
+                        <span class="badge bg-primary">html/css</span>
+                        <span class="badge bg-warning">java</span>
+                        <span class="badge bg-danger">javascript</span>
+                        <span class="badge bg-success">spring</span>
+                        <span class="badge bg-secondary">android</span>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-2">
-                <div class="rounded shadow-sm"></div>
-                <div></div>
+            <div id="right" class="col-md-2">
+                <div id="find" class="rounded shadow-sm">
+                    <div class="w-100" style="color: #6fbaf8;text-align: center; vertical-align: middle;">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <div>
+                        <div>Find me at my mail</div>
+                        <button type="button" class="btn btn-primary" disabled>
+                            Contact
+                        </button>
+                    </div>
+                </div>
+                <div>
+
+                </div>
             </div>
         </div>
 
