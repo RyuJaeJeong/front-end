@@ -39,23 +39,34 @@
 
         #media-object>.flex-shrink-0{
             width : 20%;
-            height : 100%;
-            margin : 0 3%;
+            position: relative;
+            margin-right: 3%;
         }
 
-        #media-object>.flex-shrink-0>img{
+        .flex-shrink-0:after{
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+        }
+
+        #inner {
+            position: absolute;
             width: 100%;
             height: 100%;
+            margin: auto;
+        }
+
+        #inner>img{
+            width: 100%;
+            height: 100%;
+            margin: auto;
         }
 
         #media-object>.flex-grow-1{
             width : 75%;
             height : 100%;
+            margin: auto 0;
         }
-
-
-
-
 
         #profile-tab{
             width: 75%;
@@ -78,9 +89,33 @@
             height: 100%;
         }
 
+        #profile-content>div:nth-child(3){
+           padding:0;
+        }
+
         #profile-content>div:nth-child(3)>div:nth-child(1){
             background-color: white;
+            width:100%;
             height: 60%;
+        }
+
+        #profile-tbl {
+            font-weight: bolder;
+        }
+
+        .name{
+            font-size: 1.5em;
+            padding-bottom: 2%;
+        }
+
+        .job{
+            font-size: 1.2em;
+            padding-bottom: 2%;
+        }
+
+        .location{
+            font-size: 1.2em;
+            padding-bottom: 4%;
         }
 
 
@@ -105,20 +140,13 @@
                 width : 40%;
                 height : 100%;
                 margin : 3%;
-                padding-top: 5%;
                 line-height: 50%;
             }
 
-            #media-object>.flex-shrink-0>img{
-                width: 88%;
-                height: 75%;
-                display: block;
-            }
 
             #media-object>.flex-grow-1{
                 width : 60%;
                 height : 100%;
-                padding-left: 1%;
             }
 
             #media-object>.flex-grow-1>h1{
@@ -131,9 +159,6 @@
 
             }
 
-            #profile-location{
-                font-size: 12px;
-            }
 
             #media-object>.flex-grow-1>button{
                 padding: 2% 5%;
@@ -143,6 +168,38 @@
                 width: 90%;
 
             }
+
+            #profile-content>div:nth-child(1){
+                height: 50%;
+                margin: 3% 0;
+                background-color: white;
+            }
+
+            #profile-content>div:nth-child(2){
+                height: 100%;
+                background-color: white;
+                margin: 3% 0;
+            }
+
+            #profile-content>div:nth-child(3){
+                height: 60%;
+            }
+
+            .name{
+                font-size: 1.2em;
+                padding-bottom: 2%;
+            }
+
+            .job{
+                font-size: 0.8em;
+                padding-bottom: 2%;
+            }
+
+            .location{
+                font-size: 0.8em;
+                padding-bottom: 2%;
+            }
+
 
         }
 
@@ -156,29 +213,31 @@
     <div class="container-fluid w-100 h-100 pt-4">
         <div id="profile-header" class="row mx-auto rounded shadow-sm" >
             <div class="col-md-8">
-                <div id="media-object" class="d-flex  w-100 h-100">
+                <div id="media-object" class="d-flex">
                     <div class="flex-shrink-0">
-                        <img id="profile-pic" class=" rounded-circle"  src="./img/KakaoTalk_20220418_210655995.jpg">
+                        <div id="inner">
+                            <img id="profile-pic" class="rounded-circle"  src="./img/portfolio-1.jpg">
+                        </div>
                     </div>
-                    <div class="flex-grow-1 align-middle" style="vertical-align: middle">
-                        <table class="h-100">
+                    <div class="flex-grow-1">
+                        <table id="profile-tbl">
                             <tr>
-                                <td style="font-size: 1.5em; font-weight: bolder;">
+                                <td class="name">
                                     Finance Ryu
                                 </td>
                             </tr>
                             <tr>
-                                <td style="font-size: 1em;">
+                                <td class="job">
                                     Web Developer
                                 </td>
                             </tr>
                             <tr>
-                                <td style="font-size: 1em; color:#6fbaf8; font-weight: bold;">
+                                <td class="location" style="color:#6fbaf8;">
                                     <i class="fa-solid fa-location-dot"></i> 대구 달서구
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td class="btnContact">
                                     <button type="button" class="btn btn-primary" disabled>
                                         Contact
                                     </button>
@@ -217,7 +276,7 @@
         </div>
 
         <div id="profile-content" class="row mx-auto">
-            <div class="col-md-2 rounded shadow-sm" style="">
+            <div class="col-md-2 rounded shadow-sm">
 
             </div>
             <div class="col-md-7 rounded shadow-sm">
