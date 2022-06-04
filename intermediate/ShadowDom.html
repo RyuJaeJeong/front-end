@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        /*
+        shadow dom 이용한 html 요소 커스텀
+        크롬 설정 바꾸고 >  shadow dom요소 식별 후 > css-psedo-element 이용 해 커스텀 
+
+        */
+        input[type=file]::file-selector-button{
+            background-color: skyblue;
+            border: none;
+            color: white;
+        }
+
+        input[type=text]::-webkit-input-placeholder{
+            color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<input type="file">
+<!--
+
+pseudo-element :: 내부 일부만 스타일을 주고 싶을때 씀.
+전체에 적용되는 pseudo-class와 차이가남
+
+
+
+-->
+
+<input type="text" placeholder="ㅎㅇㅎㅇㅇ">
+<meter value="100" max="150"></meter>
+
+</body>
+</html>
