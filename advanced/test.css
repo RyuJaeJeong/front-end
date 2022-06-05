@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* 변수문법 */
+/* 사칙연산은 같은 단위끼리 하셈! */
+/* sass를 사용 하지 않던라도 css상에서 변수를 선언하거나, calc함수를 써서 연산을 해주거나 그런건 된다 */
+/* scss뿐만 아니라 sass에서도 SASS문법 사용 가능한데 괄호 안써도된다. 택 1 하믄대 */
+.background {
+  background-color: #2a4cb2;
+  color: #eeeeee;
+  font-size: 14px;
+}
+
+/* nesting 문법이라고 함 */
+.main-bg h4 {
+  font-size: 18px;
+}
+.main-bg button {
+  color: red;
+}
+
+.btn-red, .btn-blue, .btn-green {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.div-red, .div-blue, .div-green {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+.btn-green {
+  color: green;
+}
+
+.btn-blue {
+  color: blue;
+}
+
+.btn-red {
+  color: red;
+}
+
+.div-green {
+  color: green;
+}
+
+.div-blue {
+  color: blue;
+}
+
+.div-red {
+  color: red;
+}
+
+/*# sourceMappingURL=test.css.map */
