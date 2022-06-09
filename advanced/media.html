@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <video src="./media/bridge.mp4" controls></video>
+    <audio src="./media/bass.mp3" controls></audio>
+
+    <!-- 더 나은 방식 -->
+    <!-- 더 나은 방식 크롬 정책상 autoplay는 항상 muted와 함께 사용해야 합니다.-->
+    <video controls autoplay muted preload="metadata" poster="media/product1-1.jpg">
+        <source src="media/bridge_m.webm" type="video/mp4">
+        <source src="media/bridge.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
