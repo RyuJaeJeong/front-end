@@ -4,6 +4,8 @@ div{
 
 .container{
     height: 100VH;
+    position: relative;
+    z-index: 1;
 }
 
 .header{

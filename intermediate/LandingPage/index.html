@@ -10,8 +10,85 @@
           integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .menu{
+           position: absolute;
+           z-index: 2;
+           width: 10%;
+           height: 100%;
+           background-color: black;
+           color: white;
+           text-align: right;
+           transition: width 3s;
+
+        }
+
+        .menu:hover{
+            width: 20%;
+            text-align: center;
+
+        }
+
+        ul{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .menu>h3 {
+            margin-right: 30px;
+        }
+        .menu:hover>h3 {
+            margin-right: 0px;
+        }
+
+        .menu>ul>li{
+            text-align: center;
+            transform: translateX(-150px);
+        }
+
+        .menu:hover>ul>li{
+            transform: translateX(0px);
+            animation-name:itemAni;
+            animation-duration: 2s;
+            text-align: center;
+        }
+
+        ul li {
+            padding: 0px;
+            padding-inline-start: 0px;
+        }
+
+
+        @keyframes itemAni {
+            0% {
+
+            }
+
+            30% {
+                transform: translateX(100px);
+            }
+
+            60% {
+                transform: skew(-30deg);
+            }
+
+            100% {
+                transform: skew(0deg);
+                transform: translateX(0px);
+            }
+        }
+        
+        
+
+    </style>
 </head>
 <body>
+    <div class="menu">
+    <h3>Menu</h3>
+    <ul>
+        <li style="list-style: none">item1</li>
+    </ul>
+    </div>
     <div class="container">
         <div class="header">
             <div class="header-info">

@@ -55,11 +55,13 @@
         .plus{
             font-weight: bold;
             font-size: 60px;
+            margin:0;
+            text-align: center;
         }
 
         .plus:hover{
             animation-name:plus;
-            animation-duration: 3s;
+            animation-duration: 2s;
         }
 
         @keyframes shake {
@@ -87,17 +89,19 @@
         @keyframes plus {
             0% {
                 transform: rotate(0deg);
+                font-size: 60px;
             }
 
 
             50% {
-                transform: rotate(-15deg);
+                transform: rotate(-30deg);
+                font-size: 60px;
             }
 
 
             100% {
-                transform: rotate(30deg);
-                /*font-size: 80px;*/
+                transform: rotate(45deg);
+                font-size: 100px;
             }
         }
 
@@ -105,7 +109,7 @@
 </head>
 <body>
         <h4 class="anti-text"> 안녕하세요 </h4>
-        <button class="btnShake">흔들버튼</button> <br>
-        <span class="plus"> + </span>
+        <button class="btnShake">흔들버튼</button> <br><br><br>
+        <p class="plus">+</p>
 </body>
 </html>
