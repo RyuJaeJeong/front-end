@@ -1,0 +1,33 @@
+.grid-container{
+  display: grid;
+  width: 100%;
+  height: 500px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "헤더 헤더 헤더 헤더"
+    "사이드 . . ."
+    "사이드 . . .";
+  grid-gap: 10px;
+
+  div{
+    border: 1px solid black;
+  }
+
+  /*.grid-nav{
+    grid-column: 1/5;
+  }
+
+  .grid-sidebar{
+    grid-row: 2/4;
+  }*/
+
+  .grid-nav{
+   grid-area: 헤더;
+ }
+
+ .grid-sidebar{
+   grid-area: 사이드;
+ }
+
+}
