@@ -1,0 +1,63 @@
+@use "normalize";
+
+$border_style : 1px solid #DFDFDF;
+
+/* nesting 문법 연습 */
+ul{
+  li{
+    list-style: none;
+    padding: 15px;
+    border-top: $border_style;
+    border-left: $border_style;
+    border-right: $border_style;
+    width: 20%;
+  }
+
+  .active{
+    color: white;
+    background-color: #007bff;
+  }
+}
+
+@mixin alertStyle($배경색, $글자색){
+  color: $글자색;
+  background-color: $배경색;
+  border-radius : 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.alert-green{
+  @include alertStyle(#DEEFE8, #3D7A4D)
+}
+
+.alert-blue{
+  @include alertStyle(#D9EDF7, #327195)
+}
+
+.alert-yellow{
+  @include alertStyle(#FCF7E3, #A49F9A)
+}
+
+@mixin colStyle($width){
+  width: $width;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.row{
+  margin: 10px;
+  width: 80%;
+  display: flex;
+
+  .col-6{
+    @include colStyle(50%)
+  }
+
+  .col-4{
+    @include colStyle(33%)
+  }
+
+}

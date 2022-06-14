@@ -1,0 +1,29 @@
+@use "normalize.css";
+
+body{
+  height: 100VH;
+}
+
+.container-fluid{
+  height: 100%;
+  padding: 0;
+}
+
+.row:nth-child(2){
+  height: 10%;
+}
+
+.row:nth-child(3){
+  height: 90%;
+}
+
+.menu{
+  width: 4%;
+  height: 100%;
+  float: left;
+  background-color: black;
+}
+
+.menu::after{
+  clear: both;
+}
