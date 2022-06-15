@@ -626,19 +626,89 @@ body {
 
 .row:nth-child(2) {
   height: 10%;
+  padding: 15px;
 }
 
 .row:nth-child(3) {
   height: 90%;
+  padding: 15px;
 }
 
 .menu {
-  width: 4%;
+  width: 5%;
   height: 100%;
+  padding: 30px 15px;
   float: left;
+  text-align: center;
+  color: white;
   background-color: black;
+  transition: 0.5s;
+}
+.menu ul {
+  list-style: none;
+  font-size: 19px;
+  padding: 0px;
+}
+.menu ul li {
+  margin-top: 100px;
 }
 
+.menu:hover {
+  width: 15%;
+  padding: 30px 15px;
+  text-align: left;
+}
+.menu:hover ul li {
+  margin-top: 100px;
+}
+.menu:hover ul li:nth-child(1)::after {
+  content: "Home";
+  font-size: 0px;
+  display: inline-block;
+  animation-name: menu_animation;
+  animation-fill-mode: forwards;
+  animation-duration: 1.3s;
+}
+.menu:hover ul li:nth-child(2)::after {
+  content: "Services";
+  font-size: 0px;
+  display: inline-block;
+  animation-name: menu_animation;
+  animation-fill-mode: forwards;
+  animation-duration: 1.3s;
+}
+.menu:hover ul li:nth-child(3)::after {
+  content: "Alerts";
+  font-size: 0px;
+  display: inline-block;
+  animation-name: menu_animation;
+  animation-fill-mode: forwards;
+  animation-duration: 1.3s;
+}
+.menu:hover ul li:nth-child(4)::after {
+  content: "Chart";
+  font-size: 0px;
+  display: inline-block;
+  animation-name: menu_animation;
+  animation-fill-mode: forwards;
+  animation-duration: 1.3s;
+}
+
+@keyframes menu_animation {
+  0% {
+    transform: translateX(-999px);
+  }
+  30% {
+    font-size: 19px;
+  }
+  60% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(15px);
+    font-size: 19px;
+  }
+}
 .menu::after {
   clear: both;
 }
