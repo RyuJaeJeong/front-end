@@ -1,4 +1,3 @@
-@use "normalize.css";
 
 body{
   height: 100VH;
@@ -15,8 +14,51 @@ body{
 }
 
 .row:nth-child(3){
-  height: 90%;
+  height: 10%;
   padding: 15px;
+}
+.row:nth-child(4){
+  height: 20%;
+  padding: 15px;
+}
+
+.row:nth-child(5){
+  height: 60%;
+  padding: 15px;
+}
+
+.btn-glass {
+  color: white;
+  background-color: #111717;
+}
+
+.btn-glass:hover{
+  color: white;
+}
+
+.nav-item{
+  padding: 8px;
+}
+
+.fa-bell{
+  position: relative;
+}
+
+.badge-bell{
+  position: absolute;
+  display: block;
+  top: -2px;
+  left: 20px;
+}
+
+.search-anime{
+  width: 200px;
+  transition-property: width;
+  transition: 1s;
+}
+
+.search-anime:focus{
+  width: 300px;
 }
 
 .menu{
@@ -26,13 +68,16 @@ body{
   float: left;
   text-align: center;
   color: white;
-  background-color: black;
+  background-color: #111717;
   transition: 0.5s;
+
   ul{
     list-style: none;
     font-size:19px;
     padding: 0px;
-   li{
+
+    li:nth-child(2), li:nth-child(3),
+    li:nth-child(4){
       margin-top: 100px;
     }
 
@@ -44,7 +89,9 @@ body{
   padding: 30px 15px;
   text-align: left;
   ul{
-    li{
+
+    li:nth-child(2), li:nth-child(3),
+    li:nth-child(4){
       margin-top: 100px;
     }
 
@@ -88,6 +135,62 @@ body{
 
   }
 
+}
+
+.grid-container{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:1fr;
+  grid-gap: 5%;
+
+  .first-card{
+    border-left: 7px solid yellow;
+    padding: 5%;
+    display: flex;
+  }
+
+  .second-card{
+    border-left: 7px solid greenyellow;
+    padding: 5%;
+    display: flex;
+  }
+
+  .third-card{
+    border-left: 7px solid skyblue;
+    padding: 5%;
+    display: flex;
+  }
+
+  .fourth-card{
+    border-left: 7px solid darkblue;
+    padding: 5%;
+    display: flex;
+  }
+}
+
+.content-header{
+  height: 10%;
+}
+
+.card-chart{
+  width: 100%;
+  height: 95%;
+  margin-left: 12px;
+  padding: 0px;
+
+  .card-body{
+    padding-top: 0px;
+  }
+  #myChart{
+    height: 95%!important;
+  }
+}
+
+.card-array{
+  width: 95%;
+  margin-left: 5%;
 }
 
 @keyframes menu_animation {
