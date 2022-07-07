@@ -11,12 +11,20 @@
             margin: 0;
         }
 
-        .container{
-            position: relative;
+        html{
+            scroll-behavior: smooth;
         }
 
+        .container {
+            position: relative;
 
-        .main-first{
+        }
+
+        /*
+        padding top 주지 않으면 마진 컬랩스 발생한다.
+
+        */
+        .main-first {
             width: 100%;
             height: 100%;
             max-height: 900px;
@@ -26,18 +34,18 @@
             padding-top: 5px;
         }
 
-        .main-first>header{
+        .main-first > header {
             display: flex;
             margin-top: 20px;
             justify-content: center;
 
         }
 
-        .logo{
+        .logo {
             color: white;
             font-size: 2.5em;
-            overflow:visible;
-            white-space:nowrap;
+            overflow: visible;
+            white-space: nowrap;
             font-family: 'Nanum Pen Script', cursive;
         }
 
@@ -45,7 +53,7 @@
 
         }
 
-        .menu li{
+        .menu li {
             display: inline-block;
             margin-right: 50px;
             color: white;
@@ -61,37 +69,75 @@
             flex-grow: 0.7;
         }
 
+        .first-body {
+            display: flex;
+            justify-content: center;
+            height: 55%;
+            align-items: center;
+            color: white;
+            font-size: 2em;
+            font-family: 'Nanum Pen Script', cursive;
+        }
+
+        .yesterday {
+            background-color: #00ff90;
+            width: 100%;
+            height: 100%;
+            color: white;
+            text-align: center;
+            padding: 25%;
+            box-sizing: border-box;
+            font-size: 32px;
+            transition: all 2s;
+        }
+
+
     </style>
-
-    <script>
-
-    </script>
+    <meta charset="UTF-8">
+    <!-- 구글 검색시 파란제목으로 뜨는 글귀 -->
+    <meta name="description" content="어제의 날씨">
+    <!-- 검색에 도움을 주는 키워드 -->
+    <meta name="keywords" content="일기예보,날씨.기상예보,어제">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="./image/AdobeStock_76339850.jpeg">
+    <meta property="og:description" content="어제의 날씨입니다.">
+    <meta property="og:title" content="어제의 날씨">
+    <!--    <link rel="icon" href="아이콘경로.ico" type="image/x-icon">-->
 
 </head>
 <body>
-    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <div class="container" style="height: 1080px;">
+<link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
 
-        <div class="main-first">
-            <header>
-                <div class="logo">
+<div class="container" style="height: 1080px;">
+
+    <div class="main-first" style="position: relative">
+        <header>
+            <div class="logo">
                     <span class="material-symbols-outlined">
                         beach_access
                     </span>
-                    어제의 날씨
-                </div>
-                <div class="temp"></div>
-                <div class="menu">
-                    <ul>
-                        <li>YESTERDAY</li>
-                        <li>TODAY</li>
-                        <li>TOMMOROW</li>
-                    </ul>
-                </div>
-            </header>
-
+                어제의 날씨
+            </div>
+            <div class="temp"></div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#yesterday">YESTERDAY</a>
+                    </li>
+                    <li>TODAY</li>
+                    <li>TOMMOROW</li>
+                </ul>
+            </div>
+        </header>
+        <div class="first-body">
+            <h1 align="center">어제의 날씨를 알려 드립니다.!</h1>
         </div>
     </div>
+    <div id="yesterday" class="yesterday">
+        yesterday
+    </div>
+
+</div>
 
 </body>
 </html>

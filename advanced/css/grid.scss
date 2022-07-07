@@ -1,13 +1,15 @@
 .grid-container{
   display: grid;
-  width: 100%;
+  width: 80%;
   height: 500px;
+  align-content: center;
+  margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
     "헤더 헤더 헤더 헤더"
-    "사이드 . . ."
-    "사이드 . . .";
+    "사이드 컨텐츠 컨텐츠 컨텐츠"
+    "사이드 컨텐츠 컨텐츠 컨텐츠";
   grid-gap: 10px;
 
   div{
@@ -30,4 +32,46 @@
    grid-area: 사이드;
  }
 
+  .grid-contents{
+    grid-area: 컨텐츠;
+  }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container{
+    display: grid;
+    width: 80%;
+    /*height: 500px;*/
+    align-content: center;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "헤더"
+    "사이드"
+    "컨텐츠";
+    grid-gap: 10px;
+
+    div{
+      border: 1px solid black;
+    }
+
+    .grid-nav{
+      grid-area: 헤더;
+    }
+
+    .grid-sidebar{
+      grid-area: 사이드;
+    }
+
+    .grid-contents{
+      grid-area: 컨텐츠;
+    }
+
+
+
+  }
 }
