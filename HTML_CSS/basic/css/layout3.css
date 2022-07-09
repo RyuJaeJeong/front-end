@@ -1,0 +1,64 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+}
+
+.main-background {
+  width: 100%;
+  height: 80vh;
+  background-image: url(../image/shoes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  position: relative;
+}
+.main-background h1 {
+  color: white;
+  margin: auto;
+  text-align: center;
+  position: relative; /* relative 내 원래 위치를 기준으로 이동해 주세요 */
+  top: 30%;
+  font-size: 4em;
+}
+.main-background .main-p {
+  color: white;
+  margin: auto;
+  text-align: center;
+  position: relative; /* relative 내 원래 위치를 기준으로 이동해 주세요 */
+  top: 35%;
+  font-size: 1.5em;
+}
+.main-background button {
+  padding: 15px;
+  font-size: 16px;
+  position: relative;
+  top: 40%;
+  display: block;
+  margin: auto;
+  border: none;
+  border-radius: 5px;
+}
+
+.main-description {
+  width: 50%;
+  height: 30%;
+  background-color: #EEEEEE;
+  padding: 0px 30px;
+  background-clip: border-box;
+  position: absolute;
+  margin: auto;
+  top: 90%;
+  right: 0;
+  left: 0;
+}
+.main-description h3 {
+  text-align: center;
+  height: 10%;
+  margin: 3% auto;
+}
+.main-description .description-p {
+  color: black;
+  text-align: center;
+}
+
+/*# sourceMappingURL=layout3.css.map */

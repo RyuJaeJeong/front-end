@@ -1,0 +1,67 @@
+
+@mixin textStyle($fontSize, $top){
+  color:white;
+  margin: auto;
+  text-align: center;
+  position: relative;   /* relative 내 원래 위치를 기준으로 이동해 주세요 */
+  top: $top;
+  font-size: $fontSize;
+}
+
+body{
+  margin: 0;
+}
+
+.main-background{
+  width: 100%;
+  height: 80vh;
+  background-image: url(../image/shoes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  position: relative;
+
+  h1{
+    @include textStyle(4em, 30%)
+  }
+
+  .main-p{
+    @include textStyle(1.5em, 35%)
+  }
+
+  button{
+    padding: 15px;
+    font-size: 16px;
+    position: relative;
+    top: 40%;
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+.main-description{
+  width: 50%;
+  height: 30%;
+  background-color: #EEEEEE;
+  padding: 0px 30px;
+  background-clip: border-box;
+  position: absolute;
+  margin: auto;
+  top: 90%;
+  right: 0;
+  left: 0;
+
+  h3{
+    text-align: center;
+    height: 10%;
+    margin: 3% auto;
+  }
+
+  .description-p{
+    color: black;
+    text-align: center;
+  }
+
+}
