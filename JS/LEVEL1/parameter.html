@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>alert box</title>
+    <!-- bootstrap 5.1.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- font-awesome 6.1.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .alert-blue{
+            width: 900px;
+            height: 120px;
+            background-color: #D0E1FF;
+            line-height: 70px;
+            color:#344E91;
+        }
+
+
+        span{
+            font-weight:bold;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!--
+
+    UI 만드는 step
+    1. HTML/CSS로 미리 디자인
+    2. 필요할 때 보여달라고 코드짬 (자바스크립트로)
+
+    -->
+
+
+    <div class="alert-blue m-5" id="alert-blue">
+        <p id="ment" style="display: inline;">
+            <i class="fa-solid fa-xmark" style="display: inline;"></i>
+        </p>
+        <button  onclick="document.getElementById('alert-blue').style.display='none'">닫기</button>
+    </div>
+
+    <button onclick="show('아이디를 입력하세요.')">
+        버튼1
+    </button>
+    <button onclick="show('비밀번호를 입력하세요.')">
+        버튼2
+    </button>
+
+
+<script>
+    function show(ment){
+        document.getElementById('alert-blue').style.display='block';
+        document.getElementById('ment').innerHTML=ment;
+    }
+</script>
+
+</body>
+</html>
