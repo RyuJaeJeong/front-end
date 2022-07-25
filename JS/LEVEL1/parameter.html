@@ -45,19 +45,27 @@
         <button  onclick="document.getElementById('alert-blue').style.display='none'">닫기</button>
     </div>
 
-    <button onclick="show('아이디를 입력하세요.')">
+    <button id="btnId">
         버튼1
     </button>
-    <button onclick="show('비밀번호를 입력하세요.')">
+    <button id="btnPassword">
         버튼2
     </button>
 
 
 <script>
-    function show(ment){
+
+    document.getElementById('btnId').addEventListener('click', function (){
         document.getElementById('alert-blue').style.display='block';
-        document.getElementById('ment').innerHTML=ment;
-    }
+        document.getElementById('ment').innerHTML='아이디를 입력하세요.';
+    })
+
+    document.getElementById('btnPassword').addEventListener('click', function (){
+        document.getElementById('alert-blue').style.display='block';
+        document.getElementById('ment').innerHTML='비밀번호를 입력하세요.';
+    })
+
+
 </script>
 
 </body>
